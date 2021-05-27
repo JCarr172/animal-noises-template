@@ -2,3 +2,7 @@ Flask==1.1.2
 pytest==6.2.3
 pytest-cov==2.11.1
 requests
+flask_testing
+requests_mock
+flask_sqlalchemy
+pymysql

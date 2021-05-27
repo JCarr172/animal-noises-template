@@ -11,5 +11,13 @@
         <p>
             The {{animal}} goes {{noise}}
         </p>
+        <h2>
+            The last five animals:
+        </h2>>
+        <p>
+            {% for animal in all_animals %}
+                The {{animal.type}} goes {{animal.noise}}<br>
+            {% endfor %}
+        </p>
     </body>
 </html>

@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+    server:
+        container_name: animal_noises_server
+        image: jcarr172/animal_noises_server
+        build: ./server
+        ports: 
+          - published: 5000
+            target: 5000
+        environment:
+          DATABASE_URI: ${DATABASE_URI}
+    api:
+        container_name: animal_noises_api
+        image: jcarr172/animal_noises_api
+        build: ./animal_api 
